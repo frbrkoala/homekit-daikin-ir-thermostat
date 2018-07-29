@@ -29,10 +29,10 @@ if (!remotes[nconf.get('remote')]) {
   process.exit(1)
 }
 
-nconf.set('minCoolTemp', remotes[nconf.get('remote')].modes.cool.min)
+/*nconf.set('minCoolTemp', remotes[nconf.get('remote')].modes.cool.min)
 nconf.set('maxCoolTemp', remotes[nconf.get('remote')].modes.cool.max)
 nconf.set('minHeatTemp', remotes[nconf.get('remote')].modes.heat.min)
-nconf.set('maxHeatTemp', remotes[nconf.get('remote')].modes.heat.max)
+nconf.set('maxHeatTemp', remotes[nconf.get('remote')].modes.heat.max)*/
 nconf.set('minAutoTemp', remotes[nconf.get('remote')].modes.auto.min)
 nconf.set('maxAutoTemp', remotes[nconf.get('remote')].modes.auto.max)
 
