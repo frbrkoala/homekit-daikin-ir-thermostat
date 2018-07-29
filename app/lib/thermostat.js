@@ -14,10 +14,10 @@ class Thermostat {
       sensorGpio: config.get('sensorGpio')
     }
 
-    /*this.minCoolTemp = parseInt(config.get('minCoolTemp'))
-     this.maxCoolTemp = parseInt(config.get('maxCoolTemp'))
-     this.minHeatTemp = parseInt(config.get('minHeatTemp'))
-     this.maxHeatTemp = parseInt(config.get('maxHeatTemp'))*/
+    this.minCoolTemp = parseInt(config.get('minCoolTemp'))
+    this.maxCoolTemp = parseInt(config.get('maxCoolTemp'))
+    this.minHeatTemp = parseInt(config.get('minHeatTemp'))
+    this.maxHeatTemp = parseInt(config.get('maxHeatTemp'))
     this.minAutoTemp = parseInt(config.get('minAutoTemp'))
     this.maxAutoTemp = parseInt(config.get('maxAutoTemp'))
 
