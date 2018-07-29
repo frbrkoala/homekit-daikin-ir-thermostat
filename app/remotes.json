@@ -1,17 +1,9 @@
 {
-  "daikin-arc452a4": {
+  "daikin-brc4c153": {
     "manufacturer": "Daikin",
-    "model": "ARC452A4",
+    "model": "BRC4C153",
     "modes": {
       "auto": {
-        "min": 18,
-        "max": 30
-      },
-      "heat": {
-        "min": 10,
-        "max": 30
-      },
-      "cool": {
         "min": 18,
         "max": 30
       }

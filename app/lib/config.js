@@ -7,19 +7,20 @@ const remotes = require('../remotes.json')
 const configFile = path.resolve(__dirname, '../persist/config.json')
 
 nconf.argv().env()
-  .file({ file: configFile })
+  .file({
+    file: configFile
+  })
 
 nconf.defaults({
   username: null,
   pincode: null,
   name: 'Thermostat',
-  remote: 'daikin-arc452a4',
+  remote: 'daikin-brc4c153',
   currentTargetTemp: 25,
   currentState: 'off',
-  dht: false,
-  irsend: 'irsend',
-  sensorType: 11,
-  sensorGpio: 4
+  sensor: true,
+  sensorCmdPath: '~/aircon/bin/HTU21D',
+  irsend: 'irsend'
 })
 
 // Check remote
